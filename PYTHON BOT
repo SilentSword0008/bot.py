@@ -1,0 +1,32 @@
+Made By
+@么§ilent§word么#0008
+
+
+import discord
+from discord.ext import commands
+
+client = commands.Bot(command_prefix=">")
+
+@client.event
+async def on_ready():
+    print ("Bot Is Ready")
+
+
+@client.command()
+async def hello(ctx):
+   await ctx.send("Hi whats up")
+
+
+
+
+@client.command()
+async def bye(ctx):
+   await ctx.send("bye take care")
+
+
+@client.command()
+async def whatsup(ctx):
+   await ctx.send("all good")
+
+
+client.run("") #BOT TOKEN
